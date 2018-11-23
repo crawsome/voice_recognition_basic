@@ -35,7 +35,7 @@ if __name__ == "__main__":
         countdown(3)
         spoken = recognize_speech(our_recognizer, our_microphone)
         try:
-            print("You said: {}".format(spoken))
+            print("You said: \"{}\"".format(spoken))
         except 'UnknownValueError':
             print("Speech not recognizable or API not available")
         again = input('go again?[Y] / [N]')
